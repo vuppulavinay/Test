@@ -1,10 +1,11 @@
 import express from 'express';
 
 const app = express();
-const port= 5000;
+const port = 5000;
 
 app.get('/', (req, res) => {
-    CredentialsContainer.send("Welcome to Node.js");
+    res.send("Welcome to Node.js");
+    res.end();
 })
 
 
