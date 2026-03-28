@@ -1,3 +1,16 @@
+import express from 'express';
+
+const app = express();
+const port= 5000;
+
+app.get('/', (req, res) => {
+    CredentialsContainer.send("Welcome to Node.js");
+})
+
+
+app.listen(port, () => {
+    console.log(`Server is running on port  ${port}`);
+})
 
 console.log("Welcome to Node.js");
 
@@ -15,7 +28,7 @@ console.log("Welcome to Node.js");
 //   start: function() {
 //     // Regular function here would lose 'this'
 //     setTimeout(() => {
-//       this.seconds++; 
+//       this.seconds++;
 //       console.log(this.seconds);
 //     }, 1000);
 //   }
